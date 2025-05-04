@@ -1,88 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Advocate Shivam Jivani - Expert in Criminal, Family, and Property Law. Providing professional legal services in Surat, Gujarat.">
-  <title>Advocate Shivam Jivani | Law Firm</title>
-   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="scripts.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advocate Shivam Jivani - Expert in Criminal, Family, and Property Law">
+    <title>Advocate Shivam Jivani - Law Firm</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0b3d91;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        section {
+            padding: 60px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .about, .practice, .faq, .contact {
+            background-color: #ffffff;
+            margin-bottom: 30px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #0b3d91;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .faq .question {
+            background-color: #e4e4e4;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq .answer {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .button {
+            background-color: #0b3d91;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0041a3;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #0b3d91;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .contact-info div {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .location a {
+            color: gold;
+        }
+
+        .location a:hover {
+            text-decoration: underline;
+        }
+
+        .faq .answer {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .faq .question:hover {
+            background-color: #ccc;
+        }
+    </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <a href="#home" class="logo">Shivam Jivani</a>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#practice-areas">Practice Areas</a></li>
-      <li><a href="#location">Location</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
-  </nav>
 
-  <!-- Home Section -->
-  <section id="home" class="home">
-    <div class="home-content">
-      <h1>Welcome to Advocate Shivam Jivani's Law Firm</h1>
-      <p>Experienced in Criminal, Family, and Property Law. Offering expert legal services in Surat.</p>
-    </div>
-  </section>
+<header>
+    <img src="logo.png" alt="Advocate Shivam Jivani">
+    <h1>Advocate Shivam Jivani</h1>
+    <p>Expert in Criminal, Family, and Property Law</p>
+</header>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Advocate Shivam Jivani</h2>
-    <p>With over 6 years of courtroom experience, Advocate Shivam Jivani is a trusted name in Criminal, Family, and Property Law in Surat. Known for his sharp legal insight and unwavering commitment to justice...</p>
-  </section>
+<div class="container">
 
-  <!-- Practice Areas -->
-  <section id="practice-areas" class="practice-areas">
-    <h2>Practice Areas</h2>
-    <div class="area">
-      <h3>Criminal Law</h3>
-      <p>Expert defense in criminal cases.</p>
-    </div>
-    <div class="area">
-      <h3>Family Law</h3>
-      <p>Resolving sensitive family disputes with care.</p>
-    </div>
-    <div class="area">
-      <h3>Property Disputes</h3>
-      <p>Legal advice for property ownership issues.</p>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Advocate Shivam Jivani</h2>
+        <p>With over 6 years of courtroom experience, Advocate Shivam Jivani is a trusted name in Criminal, Family, and Property Law in Surat. Known for his sharp legal insight and unwavering commitment to justice, he has successfully handled numerous complex cases with a results-driven approach.</p>
+    </section>
 
-  <!-- Location Map -->
-  <section id="location" class="location">
-    <h2>Our Location</h2>
-    <iframe src="https://maps.app.goo.gl/EdQE1qaj8dndd7hE7" width="100%" height="450" style="border:0;"></iframe>
-  </section>
+    <!-- Practice Areas Section -->
+    <section class="practice">
+        <h2>Practice Areas</h2>
+        <ul>
+            <li><strong>Criminal Law:</strong> Defense and prosecution in criminal cases.</li>
+            <li><strong>Family Law:</strong> Divorce, child custody, inheritance, and more.</li>
+            <li><strong>Property Law:</strong> Property disputes, land ownership, and rights.</li>
+        </ul>
+    </section>
 
-  <!-- Contact Information -->
-  <section id="contact" class="contact">
-    <h2>Contact Information</h2>
-    <p><strong>Phone:</strong> 7069984696</p>
-    <p><strong>Email:</strong> shivamjivani2018@gmail.com</p>
-    <p><strong>Address:</strong> 115, Nidhi Complex, Opposite Varachha Chopati, Varachha Road, Surat</p>
-  </section>
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="question" onclick="toggleAnswer(this)">
+            <strong>What should I do if I’m accused of a crime?</strong>
+            <div class="answer">
+                Contact a lawyer immediately. It’s crucial to have legal representation to protect your rights.
+            </div>
+        </div>
+        <div class="question" onclick="toggleAnswer(this)">
+            <strong>How long does a divorce process take?</strong>
+            <div class="answer">
+                The duration depends on the complexity of the case, but it typically takes 6 months to a year.
+            </div>
+        </div>
+        <div class="question" onclick="toggleAnswer(this)">
+            <strong>What is the process for property dispute resolution?</strong>
+            <div class="answer">
+                Property disputes usually require filing a lawsuit or going through arbitration or mediation processes.
+            </div>
+        </div>
+        <div class="question" onclick="toggleAnswer(this)">
+            <strong>How can I make an appointment with Advocate Shivam Jivani?</strong>
+            <div class="answer">
+                You can reach out through the contact information section to schedule a consultation.
+            </div>
+        </div>
+        <div class="question" onclick="toggleAnswer(this)">
+            <strong>What documents are required for family law cases?</strong>
+            <div class="answer">
+                Required documents may include identification, marriage certificates, children’s birth certificates, and any relevant legal documents.
+            </div>
+        </div>
+    </section>
 
-  <!-- FAQ Section -->
-  <section id="faq" class="faq">
-    <h2>FAQ</h2>
-    <div class="faq-item">
-      <h3>What should I do if I’m arrested?</h3>
-      <p>Contact a lawyer immediately to protect your rights...</p>
-    </div>
-    <div class="faq-item">
-      <h3>How do I start a family dispute case?</h3>
-      <p>Reach out for an initial consultation...</p>
-    </div>
-    <!-- Add more FAQs as necessary -->
-  </section>
+    <!-- Contact Information Section -->
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <div>
+                <p><strong>Phone:</strong> 7069984696</p>
+                <p><strong>Email:</strong> shivamjivani2018@gmail.com</p>
+                <p><strong>Office Address:</strong> 115, Nidhi Complex, Opposite Varachha Chopati, Varachha Road, Surat</p>
+            </div>
+            <div class="location">
+                <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/EdQE1qaj8dndd7hE7" target="_blank">View on Google Maps</a></p>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Advocate Shivam Jivani</p>
-  </footer>
+</div>
+
+<footer>
+    <p>Advocate Shivam Jivani - Legal Services | All Rights Reserved</p>
+</footer>
+
+<script>
+    function toggleAnswer(question) {
+        const answer = question.querySelector('.answer');
+        if (answer.style.display === 'none' || answer.style.display === '') {
+            answer.style.display = 'block';
+        } else {
+            answer.style.display = 'none';
+        }
+    }
+</script>
+
 </body>
 </html>
