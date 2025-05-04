@@ -1,0 +1,169 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: gold;
+}
+
+/* Home Section */
+.home {
+  background: linear-gradient(135deg, #000, #333);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 3rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.home p {
+  font-size: 1.2rem;
+}
+
+.home:hover h1 {
+  transform: scale(1.1);
+}
+
+/* About Section */
+.about {
+  padding: 50px;
+  background-color: #fff;
+  color: #333;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+}
+
+/* Practice Areas */
+.practice-areas {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fafafa;
+  padding: 50px;
+}
+
+.area {
+  width: 30%;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.area:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.area h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.area p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 50px;
+  background-color: #fff;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item h3 {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.faq-item p {
+  font-size: 1.1rem;
+  display: none;
+  margin-top: 10px;
+  color: #555;
+}
+
+.faq-item:hover {
+  background-color: #f7f7f7;
+}
+
+.faq-item.active p {
+  display: block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .practice-areas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .area {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
